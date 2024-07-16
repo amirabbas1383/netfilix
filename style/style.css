@@ -556,7 +556,7 @@ main {
     display: flex;
     justify-content: center !important;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .box-slide {
