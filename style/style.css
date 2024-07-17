@@ -358,13 +358,15 @@ header {
     align-items: center;
     flex-direction: row;
 }
-.notif-message{
+
+.notif-message {
     width: 40px;
     height: 40px;
     display: flex;
     position: relative;
 }
-.notif-message>span{
+
+.notif-message>span {
     position: absolute;
     background-color: #d81f26;
     color: white;
@@ -375,9 +377,11 @@ header {
     transition: 0.3s;
     cursor: pointer;
 }
-.notif-message:hover>span{
+
+.notif-message:hover>span {
     transform: scale(1.2);
 }
+
 .alert-message {
     width: 40px;
     height: 40px;
@@ -878,22 +882,50 @@ main {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    gap: 50px;
+    justify-content: center;
 }
 
 .card-video {
     width: 200px;
     border-radius: 30px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 15px;
+
 }
 
 .card-video>img {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-top-left-radius: 30px;
     border-top-right-radius: 25px;
 }
 
-.card-video>h3 {
-    margin-top: 15px;
+.card-video::before {
+    content: "10xp";
+    color: #869fb3;
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 190px 0px 0px;
+    position: absolute;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18.6px);
+    -webkit-backdrop-filter: blur(18.6px);
+}
+
+.card-video>h4 {
+    margin: 15px 0px 0px 0px;
+    background-color: transparent;
+    font-weight: 500;
 }
 
 .box-card {
@@ -918,12 +950,33 @@ main {
     padding: 10px;
     display: flex;
     flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
 }
 
 .star-box>i {
-    font-size: 15px;
+    font-size: 10px;
+    background-color: transparent !important;
 }
 
 .Golden {
     color: #ffd000;
+}
+
+.card-video>a {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #d81f26;
+    color: white;
+    width: 50%;
+    padding: 5px 0px 5px 0px;
+    transition: 0.3s;
+    border-radius: 5px;
+    transform: scale(1);
+}
+
+.card-video>a:hover {
+  box-shadow: 0px 5px 15px #d81f2579;
+  transform: scale(1.1);
 }
