@@ -420,6 +420,7 @@ header {
     height: 80px;
     gap: 5px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: transparent;
 }
@@ -427,7 +428,7 @@ header {
 .link-profile>a {
     text-decoration: none;
     color: #363636;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .link-profile>p {
@@ -472,6 +473,7 @@ header {
 
 .box-header-input {
     display: flex;
+    width: auto;
 }
 
 .box-header-input>i {
@@ -486,7 +488,7 @@ header {
 }
 
 .box-header-input>input {
-    width: 350px;
+    width: 100%;
     padding: 18px;
     padding-left: 10px;
     border-radius: 20px;
@@ -884,6 +886,8 @@ main {
 .container-video {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+
     flex-direction: row;
     margin-top: 50px;
     gap: 50px;
