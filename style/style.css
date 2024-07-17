@@ -147,6 +147,7 @@ body {
     height: 100vh;
     position: fixed;
     flex-direction: column;
+    transition: 0.5s;
 }
 
 .side-left-header {
