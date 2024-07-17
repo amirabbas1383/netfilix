@@ -598,7 +598,7 @@ main {
     display: flex;
     justify-content: center !important;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 390px;
 }
 
 .box-slide {
@@ -908,6 +908,7 @@ main {
 
 .card-video::before {
     content: "10xp";
+    letter-spacing: 2px;
     color: #869fb3;
     color: white;
     font-size: 15px;
@@ -955,12 +956,13 @@ main {
 }
 
 .star-box>i {
+    color: #829bb0;
     font-size: 10px;
     background-color: transparent !important;
 }
 
 .Golden {
-    color: #ffd000;
+    color: #ffd000 !important;
 }
 
 .card-video>a {
@@ -979,4 +981,12 @@ main {
 .card-video>a:hover {
   box-shadow: 0px 5px 15px #d81f2579;
   transform: scale(1.1);
+}
+.card-video>span>span{
+    color: #829bb0;
+}
+.card-video>span{
+    color: #829bb0;
+    font-size: 15px;
+    letter-spacing: 3px;
 }
