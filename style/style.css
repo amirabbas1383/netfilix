@@ -312,6 +312,7 @@ span>i {
     flex-wrap: wrap;
     gap: 20px;
 margin-left: 15%;
+transition: 0.3s;
 }
 
 
